@@ -1,0 +1,86 @@
+:root{--ink:#242a28;--muted:#58615c;--cyan:#455f5a;--gold:#8c6c44;--coral:#a53c2d;--panel:rgba(242,236,221,.96);--line:rgba(54,65,58,.24)}
+html,body{background:#e9e4d6;color:var(--ink)}
+#vignette{background:radial-gradient(ellipse at 50% 44%,transparent 55%,rgba(34,37,30,.16));opacity:.65}
+#grain{display:none}
+#brand{text-shadow:none;gap:12px;top:26px;left:32px}
+.brand-copy h1{font-size:32px;letter-spacing:.22em;color:#232b27}
+.brand-copy h1 span{color:#a33f30}
+.brand-copy p{font-size:10px;letter-spacing:.15em;color:#52615b}
+.seal{width:35px;height:46px;border:1px solid #923e30;background:#a33f30;color:#f6eddb;box-shadow:inset 0 0 0 3px #a33f30,inset 0 0 0 4px #d3ab8f;font-size:16px}
+.rule{width:180px;background:linear-gradient(90deg,#52615b,transparent);margin-top:12px}
+#phase-badge,#map-badge,#vitals,#controls,#controls2d,#debug,#debug2d,#portal-prompt,#gate-prompt,#action-prompt,#toast{background:var(--panel);border:1px solid var(--line);backdrop-filter:none;box-shadow:0 4px 16px rgba(32,35,29,.06);color:#2d3932}
+#phase-badge{top:26px;right:32px;font-size:11px;letter-spacing:.12em}
+#phase-badge::before,#map-badge::before{background:#a33f30;box-shadow:none;border-radius:0}
+#map-badge{right:32px;top:72px;min-width:202px;font-size:11px;gap:5px 9px}
+#map-badge #map-name{color:#29362f;font-size:16px}
+#map-badge #map-index,#map-badge #wave-info{color:#58645b;font-size:11px}
+#vitals{width:310px;top:26px;padding:14px 16px;border-left:3px solid #384d43}
+.vital-row{font-size:10px;color:#4b574e;letter-spacing:.04em}
+.vital-row+.vital-row{margin-top:8px}
+.vital-label{width:60px}
+.vital-track{height:7px;background:#d6d4c5;border-radius:0;box-shadow:none;overflow:hidden}
+.vital-fill{box-shadow:none!important;border-radius:0;clip-path:polygon(0 7%,100% 0,99% 90%,0 100%)}
+#hp-fill{background:#a54535}#energy-fill{background:#344d43}#stamina-fill{background:#9c8051}
+.vital-value{color:#303b33;font-size:11px}
+#controls,#controls2d{left:32px;bottom:26px;width:348px;padding:13px 15px;border-top:2px solid #46594e}
+.controls-title{color:#344339;font-size:12px}.controls-title small{color:#617065}
+.key{color:#344339;font-size:11px;gap:5px}.keys{gap:7px;margin-top:10px}
+kbd{color:#313f36;background:#e6e2d4;border:1px solid #b8bbae;box-shadow:none;height:23px;font-size:10px;min-width:23px}
+.hint-line{color:#536057;border-color:#c5c8bb;font-size:11px;line-height:1.65}.hint-line b{color:#963e30}
+#debug,#debug2d{display:none!important}
+body.ink-debug #debug,body.ink-debug.mode-2d #debug2d{display:block!important}
+body.ink-debug.mode-2d #debug{display:none!important}
+#debug .debug-row span:last-child,#debug2d .debug-row span:last-child{color:#30453b}
+#ink-settings{position:fixed;z-index:9;right:32px;bottom:26px;display:flex;gap:7px;font-family:system-ui,sans-serif;align-items:center}
+#ink-settings button,#ink-settings select{font:11px system-ui,sans-serif;padding:8px 10px;border:1px solid #b6bbae;background:#f0ebde;color:#33463b;border-radius:2px;cursor:pointer}
+#ink-settings label{font-size:11px;color:#425548;background:#efe9db;padding:8px}
+#ink-settings button:focus-visible,#ink-settings select:focus-visible{outline:2px solid #a33f30;outline-offset:3px}
+#portal-prompt .portal-copy strong,#gate-prompt .portal-copy strong,.portal-copy small{color:#354d40}
+.portal-key,#gate-prompt .portal-key{background:#a33f30;color:#fff3dd;border-color:#a33f30;box-shadow:none}
+#toast{font-size:12px;letter-spacing:.04em;white-space:normal;max-width:70vw;text-align:center}
+#action-prompt{color:#a33f30}#action-prompt-label,#action-prompt-timer{color:#963b2d}
+#scroll-title{top:160px;left:32px;text-shadow:none}
+#scroll-title h2{color:#34443a;font-size:28px;letter-spacing:.26em}
+#scroll-title span,#scroll-title p{color:#59695c}
+#combat-feedback{color:#a33f30;text-shadow:0 1px #f3eddf;font-weight:700}
+#switch-overlay{background:none!important;pointer-events:none}
+#switch-ink{display:none}
+#switch-label{font-size:28px;color:#7f3328;text-shadow:none;top:39%;letter-spacing:.4em;background:rgba(239,233,219,.85);padding:10px 24px;border-left:3px solid #9c4130}
+#perfect-flash{background:radial-gradient(ellipse,transparent 55%,rgba(148,61,42,.22))!important}
+#fire-flash{background:radial-gradient(ellipse,transparent 60%,rgba(147,71,40,.22))!important}
+#damage-flash{background:radial-gradient(ellipse,transparent 60%,rgba(154,43,33,.38))!important}
+#victory{background:rgba(224,220,206,.8);backdrop-filter:none}
+#victory .victory-card{background:#f1ebdc;border:1px solid #989e8e;box-shadow:0 20px 50px #343b3320;border-top:4px solid #a33f30}
+#victory h2{color:#2e4235}#victory p{color:#586457;font-size:13px}#victory button{color:#f7eedb;background:#a33f30;border-color:#a33f30;font-size:13px}
+#loading,#fatal{background:#e9e4d6}#loading h2,#fatal h2{color:#34473c}#loading p,#fatal p{color:#596558}
+#ink-fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+body[data-ink-style="classical"] #brand .brand-copy h1{font-family:"STKaiti","Songti SC",serif}
+body[data-ink-style="fantasy"] #vignette{opacity:.9}
+@media(max-height:780px){#controls,#controls2d{width:315px;padding:10px 12px;bottom:16px}.hint-line{font-size:10px;margin-top:7px;padding-top:7px}.keys{gap:5px}#brand{top:18px}.brand-copy h1{font-size:27px}#vitals{top:18px}#ink-settings{bottom:16px}#scroll-title{top:140px}}
+@media(max-width:1050px){#brand{left:18px}.brand-copy p,.rule{display:none}#vitals{width:260px}#map-badge,#phase-badge{right:18px}#controls,#controls2d{left:18px;width:300px}#ink-settings{right:18px}#scroll-title{left:18px}#phase-badge{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+/* Alternate art directions are reproducible through ?style=classical / fantasy / modern. */
+body[data-ink-style="classical"] #brand{writing-mode:vertical-rl;gap:12px;left:30px;top:28px}
+body[data-ink-style="classical"] .brand-copy h1{font-size:29px;letter-spacing:.3em}
+body[data-ink-style="classical"] .brand-copy p,body[data-ink-style="classical"] .rule{display:none}
+body[data-ink-style="classical"] #controls,body[data-ink-style="classical"] #controls2d{border-top:1px solid #9a9e8d;background:rgba(239,233,218,.90)}
+body[data-ink-style="fantasy"]{--panel:rgba(34,44,37,.96);--line:#8f9a84}
+body[data-ink-style="fantasy"] #vitals,body[data-ink-style="fantasy"] #controls,body[data-ink-style="fantasy"] #controls2d,body[data-ink-style="fantasy"] #map-badge,body[data-ink-style="fantasy"] #phase-badge{border-color:#617363;color:#e8e6d6}
+body[data-ink-style="fantasy"] :is(.controls-title,.key,.hint-line,.vital-value,.vital-row,#map-name,#map-index,#wave-info){color:#e2e4d4!important}
+body[data-ink-style="fantasy"] #brand .brand-copy h1{font-weight:800;letter-spacing:.1em}
+body[data-ink-style="fantasy"] #hp-fill{background:#be5136}
+body[data-ink-style="fantasy"] #energy-fill{background:#8b9e81}
+body[data-ink-style="fantasy"] #stamina-fill{background:#ba9861}
+/* Keep the 2D guide compact; the inherited top anchor must not stretch it. */
+#controls2d{top:auto;bottom:26px;height:auto}
+#scroll-title{left:auto;right:34px;top:148px;transform:none;text-align:right}
+@media(max-height:780px){#controls2d{top:auto;bottom:16px}#scroll-title{top:128px}}
+body[data-ink-style="fantasy"] #toast{color:#e8e6d6}
+#combat-feedback.minor{color:#4d6657;text-shadow:0 1px #f3eddf}
+
+/* V2.1: Optional visual review strip, never shown during normal play. */
+#ink-fx-review{position:fixed;z-index:12;left:50%;bottom:18px;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid #697a6e;background:rgba(243,237,223,.97);box-shadow:0 8px 30px rgba(29,35,30,.18);color:#30453a;font:12px/1.4 system-ui,sans-serif;white-space:nowrap}
+#ink-fx-review button{border:1px solid #8a9585;background:#e5e4d5;color:#263b32;padding:7px 10px;cursor:pointer;font:inherit}
+#ink-fx-review button:hover{background:#344e3e;color:#f2e8d3}
+#ink-fx-review button:focus-visible{outline:2px solid #b64c35;outline-offset:2px}
+@media(max-width:700px){#ink-fx-review{left:8px;right:8px;transform:none;gap:4px;flex-wrap:wrap;white-space:normal}}

@@ -1,0 +1,7 @@
+.ink22-panel{position:fixed;z-index:28;right:30px;bottom:72px;width:292px;max-height:calc(100vh - 100px);overflow:auto;border:1px solid #929b88;background:#eee8da;color:#26372d;box-shadow:0 5px 22px #1e2b2920;font:12px/1.5 system-ui,sans-serif}
+.ink22-panel summary{cursor:pointer;padding:11px 14px;font-weight:650;letter-spacing:.1em;background:#e9e2d2;border-left:4px solid #1a241e}.ink22-panel summary small{float:right;color:#7d3e2e;letter-spacing:0}
+.ink22-body{padding:12px 14px}.ink22-body label{display:block;margin:0 0 11px}.ink22-body label output{float:right;color:#7f3a2b;font:12px monospace}.ink22-body input{display:block;width:100%;accent-color:#263d2e;margin-top:6px}.ink22-body select{margin-left:18px;padding:5px;background:#f4eddd;border:1px solid #9fa58e;color:#253d2e}.ink22-body button{padding:7px 9px;background:#273d30;color:#f4eddc;border:1px solid #273d30;cursor:pointer;font:12px system-ui}.ink22-actions{display:flex;gap:8px}.ink22-hint,#ink22-status{font-size:11px;color:#596953;margin:6px 0 12px}.ink22-panel :focus-visible{outline:2px solid #aa4734;outline-offset:2px}#combat-feedback.damage{color:#a33f30;text-shadow:0 1px #f3eddf}
+@media(max-height:760px){.ink22-panel{bottom:64px;max-height:calc(100vh - 90px)}}
+
+/* During the scene fold, the core dimension hand-off owns visibility immediately. */
+body.ink-space-transform #canvas2d{transition:none!important}

@@ -1,0 +1,5 @@
+/* Quiet typography and thinner paper borders; existing controls and key mappings retained. */
+.brand-copy h1{font-weight:600;letter-spacing:.28em}
+#vitals,#controls,#controls2d{box-shadow:none;background:rgba(242,237,224,.94)}
+#controls,#controls2d{border-top-color:#353f36}
+#map-badge{border-right:3px solid #983d30}
